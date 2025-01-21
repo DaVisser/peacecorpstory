@@ -1,8 +1,21 @@
 <script>
-    const stories = [
-        "https://www.peacecorps.gov/stories/story1/",
-        "https://www.peacecorps.gov/stories/story2/",
-        "https://www.peacecorps.gov/stories/story3/"
+    // List of Peace Corps country pages
+    const countries = [
+        "Benin", "Botswana", "Cameroon", "Eswatini", "Ethiopia", "Ghana", "Guinea", "Kenya", "Lesotho", 
+        "Liberia", "Madagascar", "Malawi", "Morocco", "Mozambique", "Namibia", "Rwanda", "Senegal", 
+        "Sierra Leone", "South Africa", "Tanzania", "The Gambia", "Togo", "Uganda", "Zambia",
+        "Cambodia", "Indonesia", "Kyrgyz Republic", "Mongolia", "Nepal", "Philippines", "Sri Lanka", 
+        "Thailand", "Timor-Leste", "Viet Nam",
+        "Albania", "Armenia", "Georgia", "Kosovo", "Moldova", "Montenegro", "North Macedonia", "Ukraine", 
+        "Belize", "Costa Rica", "Dominica", "Dominican Republic", "El Salvador", "Grenada", "Guatemala", "Jamaica", 
+        "Mexico", "Panama", "St. Lucia", "St. Vincent and the Grenadines", 
+        "Fiji", "Palau", "Samoa", "Tonga",
+        "Colombia", "Ecuador", "Guyana", "Paraguay"
     ];
-    window.location.href = stories[Math.floor(Math.random() * stories.length)];
+
+    // Select a random country
+    const randomCountry = countries[Math.floor(Math.random() * countries.length)];
+
+    // Redirect to the Peace Corps page for that country
+    window.location.href = `https://www.peacecorps.gov/${randomCountry}/`;
 </script>
